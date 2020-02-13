@@ -2,7 +2,7 @@ import {ADD_MANTRA} from './actions'
 
 
 const initialState = {
-    mantras: []
+    mantrasArr: []
 }
 
 
@@ -11,7 +11,7 @@ const mantra = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MANTRA:
             return {
-               mantras: state.todos.concat(action.payload.mantra)
+               mantrasArr: state.todos.concat(action.payload.mantra)
                 
             };
         default: break;
