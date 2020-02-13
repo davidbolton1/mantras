@@ -1,5 +1,8 @@
 export const ADD_MANTRA = 'ADD_MANTRA';
 
-export function add () {
-    return 
+export function actionAddMantra () {
+    return ({
+        type: ADD_MANTRA
+    })
+
 }
