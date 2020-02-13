@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class MantraForm extends React {
+class MantraForm extends Component {
     constructor(props) {
         super(props);
-        this.state= {text: ''};
+        this.state= {text: 'A test'};
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
+    handleChange = (event) => {
+        this.setState({text: event.target.value});
       }
     
 
@@ -18,7 +18,7 @@ class MantraForm extends React {
             <div>
             <form>
                 <label>Mantra:
-                    <input type="text" value={this.state.text}/>
+                    <input type="text" value={this.state.text} onChange={this.handleChange}/>
                 </label>
             </form>
             </div>
