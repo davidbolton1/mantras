@@ -11,7 +11,7 @@ const mantra = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MANTRA:
             return {
-                ...state,
+               mantras: state.todos.concat(action.payload.mantra)
                 
             };
         default: break;
